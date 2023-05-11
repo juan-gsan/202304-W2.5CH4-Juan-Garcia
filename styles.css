@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "League Spartan";
+  min-width: 320px;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+.top-container {
+  margin: 5rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+.top-container .header {
+  width: 35%;
+}
+.top-container .header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 1rem;
+}
+.top-container .header h2 {
+  font-size: 1rem;
+  color: hsl(303, 10%, 53%);
+}
+.top-container .ratings {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.top-container .ratings li {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 80%;
+}
+.top-container .ratings li span {
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+}
+
+.bottom-container {
+  margin: 5rem 10rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bottom-container .users {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-container .users li {
+  width: 30%;
+  background-color: hsl(300, 43%, 22%);
+  padding: 2rem 1.75rem;
+  border-radius: 10px;
+}
+.bottom-container .users li img {
+  border-radius: 100%;
+}
+.bottom-container .users li h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+}
+.bottom-container .users li h4 {
+  color: hsl(333, 80%, 67%);
+  font-size: 0.9rem;
+}
+.bottom-container .users li p {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.75rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
