@@ -154,8 +154,21 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1200px) {
+  .top-container {
+    display: block;
+    margin: 2rem 4rem;
+  }
+}
 .top-container .header {
   width: 35%;
+}
+@media only screen and (max-width: 1200px) {
+  .top-container .header {
+    width: 100%;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
 }
 .top-container .header h1 {
   font-size: 3rem;
@@ -175,15 +188,35 @@ body {
   align-items: flex-end;
   gap: 1rem;
 }
+@media only screen and (max-width: 1200px) {
+  .top-container .ratings {
+    margin: 0 auto;
+    align-items: center;
+    width: 50%;
+    min-width: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .top-container .ratings {
+    width: 100%;
+    min-width: 320px;
+  }
+}
 .top-container .ratings li {
   background-color: hsl(300, 24%, 96%);
   border-radius: 0.5rem;
-  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
   width: 80%;
+}
+@media only screen and (max-width: 768px) {
+  .top-container .ratings li {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 2rem;
+  }
 }
 .top-container .ratings li span {
   color: hsl(300, 43%, 22%);
@@ -205,6 +238,17 @@ body {
   padding: 2rem 1.75rem;
   border-radius: 10px;
 }
+.bottom-container .users li .users__header {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.bottom-container .users li .users__header div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  justify-content: center;
+  gap: 0.2rem;
+}
 .bottom-container .users li img {
   border-radius: 100%;
 }
@@ -215,10 +259,12 @@ body {
 .bottom-container .users li h4 {
   color: hsl(333, 80%, 67%);
   font-size: 0.9rem;
+  font-weight: lighter;
 }
 .bottom-container .users li p {
   color: hsl(0, 0%, 100%);
   font-size: 0.75rem;
+  letter-spacing: 0.05rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
